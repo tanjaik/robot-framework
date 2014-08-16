@@ -1,0 +1,10 @@
+*** Setting ***
+Documentation	สั่งสินค้า แบตสำรอง Eloop E8 ของแท้ 8,000 mAh
+Library    Selenium2Library
+
+*** Variable ***
+
+*** Test Cases ***
+Order Battery
+    Open Browser    http://www.tarad.com/product/6126300
+    
