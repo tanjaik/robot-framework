@@ -5,7 +5,7 @@ Library    		 Selenium2Library
 *** Variables ***
 ${Facebook URL}    https://www.facebook.com/
 
-*** Test Case ***
+*** Testcases ***
 Log In Facebook
     Open Browser    https://www.facebook.com/
     Title Should Be    ยินดีต้อนรับสู่ Facebook - เข้าสู่ระบบ ลงทะเบียน หรือเรียนรู้เพิ่มเติม
@@ -19,3 +19,5 @@ Log In Facebook
     Element Should Contain    id=u_0_1v    What's on your mind?
     Input Text    id=u_0_1v    Hello from Robot Framework. This is Tan's fist robot framework script.
     Click Element    xpath=(//button[@value='1'])[2] 
+
+*** Keywords ***
