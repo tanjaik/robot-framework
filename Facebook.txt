@@ -1,0 +1,12 @@
+*** Setting ***
+Documentation    ทดสอบ ระบบ FaceBook ด้วยการ Login และ Update Status
+Library    Selenium2Library
+
+*** Variable ***
+
+*** Test Cases ***
+Log In Facebook
+    Open Browser    https://www.facebook.com/
+    Title Should Be    ยินดีต้อนรับสู่ Facebook - เข้าสู่ระบบ ลงทะเบียน หรือเรียนรู้เพิ่มเติม
+
+*** Keywords ***
