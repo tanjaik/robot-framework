@@ -12,5 +12,9 @@ Order Battery
     Select Radio Button    option_id    169991
     Select From List    product_qty    5
     Click Button    f_buy
-    Wait Until Page Contains    จำนวนรวม:5 ชิ้น
-    Page Should Contain Element    xpath=//div[@id='flyout_cart']/div[@class="getitem5"]
+    Wait Until Page Contains Element    xpath=//div[@id='flyout_cart']/div[@class="getitem5"]/span
+    Element Should Contain    xpath=//div[@id='flyout_cart']/div[@class="getitem5"]/span    5 ชิ้น
+    Wait Until Page Contains Element    xpath=//div[@id='flyout_cart']/div[@class="getitem6"]/span
+    Element Should Contain    xpath=//div[@id='flyout_cart']/div[@class="getitem6"]/span    4,950.00 บาท
+    Click Element    xpath=//div[@class="getitem8"]/a
+    Click Button    สั่งซื้อทันที
