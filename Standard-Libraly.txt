@@ -2,5 +2,8 @@
 
 *** Test Cases ***
 Demo
-	@{my_words}=    Create List    Hello    Robot   SPRINT3R   X   Framework
+	@{my_words}=    Create List    Hello    Robot   SPRINT3R   X   Framework   Tanjai
 	Log    \n${my_words}    console=True
+
+	${length}=	Get length    ${my_words}
+	Log    \n${length}    console=True
