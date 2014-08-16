@@ -19,4 +19,5 @@ Log In Facebook
     Input Text    id=u_0_1v    Hello from Robot Framework. This is Tan's fist robot framework script.
     Click Element    xpath=(//button[@value='1'])[2]
 
+
 *** Keywords ***
