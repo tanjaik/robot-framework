@@ -18,3 +18,5 @@ Order Battery
     Element Should Contain    xpath=//div[@id='flyout_cart']/div[@class="getitem6"]/span    4,950.00 บาท
     Click Element    xpath=//div[@class="getitem8"]/a
     Click Button    สั่งซื้อทันที
+    Wait Until Page Contains Element    xpath=//div[@class="payment-list rbcontent payment-section-content-left"]
+    Element Should Contain    xpath=//div[@class="payment-list rbcontent payment-section-content-left"]   กรุณาเลือก วิธีการชำระเงิน
