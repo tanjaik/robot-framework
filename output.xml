@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20140816 12:28:07.840" generator="Robot 2.8.5 (Python 2.7.8 on win32)">
+<robot generated="20140816 12:39:16.799" generator="Robot 2.8.5 (Python 2.7.8 on win32)">
 <suite source="C:\Users\Avatar\Robot\robot-framework\ebola2.txt" id="s1" name="Ebola2">
 <test id="s1-t1" name="ค้นหาข้อมูลโรคติดต่อจาก google">
 <kw type="kw" name="ค้นหาข้อมูล">
@@ -17,63 +17,10 @@
 <arguments>
 <arg>${GOOGLE URL}</arg>
 </arguments>
-<msg timestamp="20140816 12:28:08.048" level="INFO">Opening browser 'firefox' to base url 'http://www.google.com'</msg>
-<status status="PASS" endtime="20140816 12:28:14.608" starttime="20140816 12:28:08.047"></status>
+<msg timestamp="20140816 12:39:17.023" level="INFO">Opening browser 'firefox' to base url 'http://www.google.com'</msg>
+<status status="PASS" endtime="20140816 12:39:26.921" starttime="20140816 12:39:17.023"></status>
 </kw>
-<status status="PASS" endtime="20140816 12:28:14.608" starttime="20140816 12:28:08.047"></status>
-</kw>
-<kw type="kw" name="ใส่คำที่ต้องการค้นหา">
-<doc></doc>
-<arguments>
-<arg>${keyword}</arg>
-</arguments>
-<kw type="kw" name="Selenium2Library.Input Text">
-<doc>Types the given `text` into text field identified by `locator`.</doc>
-<arguments>
-<arg>id=gbqfq</arg>
-<arg>${keyword}</arg>
-</arguments>
-<msg timestamp="20140816 12:28:14.610" level="INFO">Typing text 'อีโบลา' into text field 'id=gbqfq'</msg>
-<status status="PASS" endtime="20140816 12:28:14.968" starttime="20140816 12:28:14.609"></status>
-</kw>
-<kw type="kw" name="Selenium2Library.Click Button">
-<doc>Clicks a button identified by `locator`.</doc>
-<arguments>
-<arg>id=gbqfb</arg>
-</arguments>
-<msg timestamp="20140816 12:28:14.969" level="INFO">Clicking button 'id=gbqfb'.</msg>
-<status status="PASS" endtime="20140816 12:28:15.226" starttime="20140816 12:28:14.968"></status>
-</kw>
-<status status="PASS" endtime="20140816 12:28:15.227" starttime="20140816 12:28:14.609"></status>
-</kw>
-<kw type="kw" name="Selenium2Library.Wait Until Page Contains">
-<doc>Waits until `text` appears on current page.</doc>
-<arguments>
-<arg>${expected result}</arg>
-</arguments>
-<status status="PASS" endtime="20140816 12:28:15.779" starttime="20140816 12:28:15.227"></status>
-</kw>
-<status status="PASS" endtime="20140816 12:28:15.780" starttime="20140816 12:28:08.046"></status>
-</kw>
-<kw type="kw" name="ค้นหาข้อมูล">
-<doc></doc>
-<arguments>
-<arg>ebola</arg>
-<arg>ebola</arg>
-</arguments>
-<kw type="kw" name="เปิดหน้าแรกของ google">
-<doc></doc>
-<arguments>
-</arguments>
-<kw type="kw" name="Selenium2Library.Open Browser">
-<doc>Opens a new browser instance to given URL.</doc>
-<arguments>
-<arg>${GOOGLE URL}</arg>
-</arguments>
-<msg timestamp="20140816 12:28:15.784" level="INFO">Opening browser 'firefox' to base url 'http://www.google.com'</msg>
-<status status="PASS" endtime="20140816 12:28:21.711" starttime="20140816 12:28:15.783"></status>
-</kw>
-<status status="PASS" endtime="20140816 12:28:21.711" starttime="20140816 12:28:15.782"></status>
+<status status="PASS" endtime="20140816 12:39:26.921" starttime="20140816 12:39:17.022"></status>
 </kw>
 <kw type="kw" name="ใส่คำที่ต้องการค้นหา">
 <doc></doc>
@@ -86,43 +33,50 @@
 <arg>id=gbqfq</arg>
 <arg>${keyword}</arg>
 </arguments>
-<msg timestamp="20140816 12:28:21.713" level="INFO">Typing text 'ebola' into text field 'id=gbqfq'</msg>
-<status status="PASS" endtime="20140816 12:28:22.030" starttime="20140816 12:28:21.712"></status>
+<msg timestamp="20140816 12:39:26.923" level="INFO">Typing text 'อีโบลา' into text field 'id=gbqfq'</msg>
+<status status="PASS" endtime="20140816 12:39:27.392" starttime="20140816 12:39:26.922"></status>
 </kw>
 <kw type="kw" name="Selenium2Library.Click Button">
 <doc>Clicks a button identified by `locator`.</doc>
 <arguments>
 <arg>id=gbqfb</arg>
 </arguments>
-<msg timestamp="20140816 12:28:22.030" level="INFO">Clicking button 'id=gbqfb'.</msg>
-<status status="PASS" endtime="20140816 12:28:22.429" starttime="20140816 12:28:22.030"></status>
+<msg timestamp="20140816 12:39:27.392" level="INFO">Clicking button 'id=gbqfb'.</msg>
+<status status="PASS" endtime="20140816 12:39:27.548" starttime="20140816 12:39:27.392"></status>
 </kw>
-<status status="PASS" endtime="20140816 12:28:22.429" starttime="20140816 12:28:21.711"></status>
+<status status="PASS" endtime="20140816 12:39:27.548" starttime="20140816 12:39:26.922"></status>
 </kw>
+<kw type="kw" name="เจอคำที่ต้องการค้นหา">
+<doc></doc>
+<arguments>
+<arg>${expected result}</arg>
+</arguments>
 <kw type="kw" name="Selenium2Library.Wait Until Page Contains">
 <doc>Waits until `text` appears on current page.</doc>
 <arguments>
 <arg>${expected result}</arg>
 </arguments>
-<status status="PASS" endtime="20140816 12:28:23.123" starttime="20140816 12:28:22.430"></status>
+<status status="PASS" endtime="20140816 12:39:28.198" starttime="20140816 12:39:27.550"></status>
 </kw>
-<status status="PASS" endtime="20140816 12:28:23.123" starttime="20140816 12:28:15.781"></status>
+<status status="PASS" endtime="20140816 12:39:28.198" starttime="20140816 12:39:27.548"></status>
+</kw>
+<status status="PASS" endtime="20140816 12:39:28.199" starttime="20140816 12:39:17.021"></status>
 </kw>
 <kw type="teardown" name="Selenium2Library.Close All Browsers">
 <doc>Closes all open browsers and resets the browser cache.</doc>
 <arguments>
 </arguments>
-<status status="PASS" endtime="20140816 12:28:23.514" starttime="20140816 12:28:23.124"></status>
+<status status="PASS" endtime="20140816 12:39:28.303" starttime="20140816 12:39:28.200"></status>
 </kw>
 <doc></doc>
 <tags>
 </tags>
-<status status="PASS" endtime="20140816 12:28:23.516" critical="yes" starttime="20140816 12:28:08.043"></status>
+<status status="PASS" endtime="20140816 12:39:28.303" critical="yes" starttime="20140816 12:39:17.017"></status>
 </test>
 <doc>ค้นหา อีโบลา ใน www.google.com</doc>
 <metadata>
 </metadata>
-<status status="PASS" endtime="20140816 12:28:23.520" starttime="20140816 12:28:07.841"></status>
+<status status="PASS" endtime="20140816 12:39:28.305" starttime="20140816 12:39:16.799"></status>
 </suite>
 <statistics>
 <total>
