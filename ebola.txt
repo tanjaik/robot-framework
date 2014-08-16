@@ -16,6 +16,6 @@ ${GOOGLE URL}    http://www.google.com
 ค้นหาข้อมูล
     [Arguments]    ${keyword}    ${expected result}
     Open Browser    ${GOOGLE URL}
-	Input Text    id=gbqfq    ${keyword}    
+	Input Text    id=gbqfq       ${keyword}    
 	Click Button    id=gbqfb
-	Wait Until Page Contains    ${expected result}
+	Wait Until Page Contains     ${expected result}
