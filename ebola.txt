@@ -1,0 +1,21 @@
+*** Settings ***
+Documentation    ค้นหา อีโบลา ใน www.google.com
+Library    		 Selenium2Library
+Test Teardown    Close All Browsers
+
+*** Variables ***
+${GOOGLE URL}    http://www.google.com
+
+*** Testcases ***
+ค้นหาข้อมูลโรคติดต่อจาก google
+    [Template]    ค้นหาข้อมูล
+    อีโบลา    อีโบลา
+    ebola    ebola
+	
+*** Keywords ***
+ค้นหาข้อมูล
+    [Arguments]    ${keyword}    ${expected result}
+    Open Browser    ${GOOGLE URL}
+	Input Text    id=gbqfq    ${keyword}    
+	Click Button    id=gbqfb
+	Wait Until Page Contains    ${expected result}

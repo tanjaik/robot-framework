@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20140816 12:07:08.972" generator="Robot 2.8.5 (Python 2.7.8 on win32)">
+<suite source="C:\Users\Avatar\Robot\ebola.txt" id="s1" name="Ebola">
+<test id="s1-t1" name="ค้นหาข้อมูลโรคติดต่อจาก google">
+<kw type="kw" name="ค้นหาข้อมูล">
+<doc></doc>
+<arguments>
+<arg>อีโบลา</arg>
+<arg>อีโบลา</arg>
+</arguments>
+<kw type="kw" name="Selenium2Library.Open Browser">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${GOOGLE URL}</arg>
+</arguments>
+<msg timestamp="20140816 12:07:09.214" level="INFO">Opening browser 'firefox' to base url 'http://www.google.com'</msg>
+<status status="PASS" endtime="20140816 12:07:17.785" starttime="20140816 12:07:09.214"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Input Text">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=gbqfq</arg>
+<arg>${keyword}</arg>
+</arguments>
+<msg timestamp="20140816 12:07:17.786" level="INFO">Typing text 'อีโบลา' into text field 'id=gbqfq'</msg>
+<status status="PASS" endtime="20140816 12:07:18.174" starttime="20140816 12:07:17.786"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Button">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>id=gbqfb</arg>
+</arguments>
+<msg timestamp="20140816 12:07:18.174" level="INFO">Clicking button 'id=gbqfb'.</msg>
+<status status="PASS" endtime="20140816 12:07:18.357" starttime="20140816 12:07:18.174"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Wait Until Page Contains">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>${expected result}</arg>
+</arguments>
+<status status="PASS" endtime="20140816 12:07:18.673" starttime="20140816 12:07:18.357"></status>
+</kw>
+<status status="PASS" endtime="20140816 12:07:18.673" starttime="20140816 12:07:09.213"></status>
+</kw>
+<kw type="kw" name="ค้นหาข้อมูล">
+<doc></doc>
+<arguments>
+<arg>ebola</arg>
+<arg>ebola</arg>
+</arguments>
+<kw type="kw" name="Selenium2Library.Open Browser">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${GOOGLE URL}</arg>
+</arguments>
+<msg timestamp="20140816 12:07:18.675" level="INFO">Opening browser 'firefox' to base url 'http://www.google.com'</msg>
+<status status="PASS" endtime="20140816 12:07:25.797" starttime="20140816 12:07:18.675"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Input Text">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=gbqfq</arg>
+<arg>${keyword}</arg>
+</arguments>
+<msg timestamp="20140816 12:07:25.798" level="INFO">Typing text 'ebola' into text field 'id=gbqfq'</msg>
+<status status="PASS" endtime="20140816 12:07:26.134" starttime="20140816 12:07:25.798"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Button">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>id=gbqfb</arg>
+</arguments>
+<msg timestamp="20140816 12:07:26.135" level="INFO">Clicking button 'id=gbqfb'.</msg>
+<status status="PASS" endtime="20140816 12:07:26.355" starttime="20140816 12:07:26.135"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Wait Until Page Contains">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>${expected result}</arg>
+</arguments>
+<status status="PASS" endtime="20140816 12:07:27.172" starttime="20140816 12:07:26.356"></status>
+</kw>
+<status status="PASS" endtime="20140816 12:07:27.172" starttime="20140816 12:07:18.674"></status>
+</kw>
+<kw type="teardown" name="Selenium2Library.Close All Browsers">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<arguments>
+</arguments>
+<status status="PASS" endtime="20140816 12:07:27.400" starttime="20140816 12:07:27.173"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="PASS" endtime="20140816 12:07:27.400" critical="yes" starttime="20140816 12:07:09.210"></status>
+</test>
+<doc>ค้นหา อีโบลา ใน www.google.com</doc>
+<metadata>
+</metadata>
+<status status="PASS" endtime="20140816 12:07:27.402" starttime="20140816 12:07:08.973"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" pass="1" id="s1" name="Ebola">Ebola</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
