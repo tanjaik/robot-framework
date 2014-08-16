@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20140816 20:52:02.682" generator="Robot 2.8.5 (Python 2.7.8 on win32)">
+<robot generated="20140816 20:59:02.267" generator="Robot 2.8.5 (Python 2.7.8 on win32)">
 <suite source="C:\Users\Kazeni\Documents\GitHub\robot-framework\Facebook.txt" id="s1" name="Facebook">
 <test id="s1-t1" name="Log In Facebook">
 <kw type="kw" name="Selenium2Library.Open Browser">
@@ -7,26 +7,43 @@
 <arguments>
 <arg>https://www.facebook.com/</arg>
 </arguments>
-<msg timestamp="20140816 20:52:03.059" level="INFO">Opening browser 'firefox' to base url 'https://www.facebook.com/'</msg>
-<status status="PASS" endtime="20140816 20:52:12.392" starttime="20140816 20:52:03.059"></status>
+<msg timestamp="20140816 20:59:02.639" level="INFO">Opening browser 'firefox' to base url 'https://www.facebook.com/'</msg>
+<status status="PASS" endtime="20140816 20:59:11.441" starttime="20140816 20:59:02.638"></status>
 </kw>
 <kw type="kw" name="Selenium2Library.Title Should Be">
 <doc>Verifies that current page title equals `title`.</doc>
 <arguments>
 <arg>ยินดีต้อนรับสู่ Facebook - เข้าสู่ระบบ ลงทะเบียน หรือเรียนรู้เพิ่มเติม</arg>
 </arguments>
-<msg timestamp="20140816 20:52:12.507" level="INFO">Page title is 'ยินดีต้อนรับสู่ Facebook - เข้าสู่ระบบ ลงทะเบียน หรือเรียนรู้เพิ่มเติม'.</msg>
-<status status="PASS" endtime="20140816 20:52:12.507" starttime="20140816 20:52:12.392"></status>
+<msg timestamp="20140816 20:59:11.668" level="INFO">Page title is 'ยินดีต้อนรับสู่ Facebook - เข้าสู่ระบบ ลงทะเบียน หรือเรียนรู้เพิ่มเติม'.</msg>
+<status status="PASS" endtime="20140816 20:59:11.668" starttime="20140816 20:59:11.442"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Page Should Contain Element">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>id=email</arg>
+</arguments>
+<msg timestamp="20140816 20:59:11.742" level="INFO">Current page contains element 'id=email'.</msg>
+<status status="PASS" endtime="20140816 20:59:11.742" starttime="20140816 20:59:11.669"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Input Text">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=email</arg>
+<arg>tan_kazeni@hotmail.com</arg>
+</arguments>
+<msg timestamp="20140816 20:59:11.743" level="INFO">Typing text 'tan_kazeni@hotmail.com' into text field 'id=email'</msg>
+<status status="PASS" endtime="20140816 20:59:11.880" starttime="20140816 20:59:11.742"></status>
 </kw>
 <doc></doc>
 <tags>
 </tags>
-<status status="PASS" endtime="20140816 20:52:12.507" critical="yes" starttime="20140816 20:52:03.058"></status>
+<status status="PASS" endtime="20140816 20:59:11.880" critical="yes" starttime="20140816 20:59:02.637"></status>
 </test>
 <doc>ทดสอบ ระบบ FaceBook ด้วยการ Login และ Update Status</doc>
 <metadata>
 </metadata>
-<status status="PASS" endtime="20140816 20:52:12.509" starttime="20140816 20:52:02.683"></status>
+<status status="PASS" endtime="20140816 20:59:11.882" starttime="20140816 20:59:02.268"></status>
 </suite>
 <statistics>
 <total>
