@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20140816 14:25:09.573" generator="Robot 2.8.5 (Python 2.7.8 on win32)">
+<robot generated="20140816 14:25:56.103" generator="Robot 2.8.5 (Python 2.7.8 on win32)">
 <suite source="C:\Users\Avatar\Robot\robot-framework\Standard-Libraly.txt" id="s1" name="Standard-Libraly">
 <test id="s1-t1" name="Demo">
 <kw type="kw" name="@{my_words} = BuiltIn.Create List">
@@ -12,8 +12,8 @@
 <arg>Framework</arg>
 <arg>Tanjai</arg>
 </arguments>
-<msg timestamp="20140816 14:25:09.616" level="INFO">@{my_words} = [ Hello | Robot | SPRINT3R | X | Framework | Tanjai ]</msg>
-<status status="PASS" endtime="20140816 14:25:09.616" starttime="20140816 14:25:09.615"></status>
+<msg timestamp="20140816 14:25:56.157" level="INFO">@{my_words} = [ Hello | Robot | SPRINT3R | X | Framework | Tanjai ]</msg>
+<status status="PASS" endtime="20140816 14:25:56.157" starttime="20140816 14:25:56.157"></status>
 </kw>
 <kw type="kw" name="BuiltIn.Log">
 <doc>Logs the given message with the given level.</doc>
@@ -21,18 +21,18 @@
 <arg>\n${my_words}</arg>
 <arg>console=True</arg>
 </arguments>
-<msg timestamp="20140816 14:25:09.617" level="INFO">
+<msg timestamp="20140816 14:25:56.158" level="INFO">
 [u'Hello', u'Robot', u'SPRINT3R', u'X', u'Framework', u'Tanjai']</msg>
-<status status="PASS" endtime="20140816 14:25:09.617" starttime="20140816 14:25:09.616"></status>
+<status status="PASS" endtime="20140816 14:25:56.159" starttime="20140816 14:25:56.158"></status>
 </kw>
 <kw type="kw" name="${length} = BuiltIn.Get Length">
 <doc>Returns and logs the length of the given item.</doc>
 <arguments>
 <arg>${my_words}</arg>
 </arguments>
-<msg timestamp="20140816 14:25:09.618" level="INFO">Length is 6</msg>
-<msg timestamp="20140816 14:25:09.618" level="INFO">${length} = 6</msg>
-<status status="PASS" endtime="20140816 14:25:09.618" starttime="20140816 14:25:09.618"></status>
+<msg timestamp="20140816 14:25:56.159" level="INFO">Length is 6</msg>
+<msg timestamp="20140816 14:25:56.160" level="INFO">${length} = 6</msg>
+<status status="PASS" endtime="20140816 14:25:56.159" starttime="20140816 14:25:56.159"></status>
 </kw>
 <kw type="kw" name="BuiltIn.Log">
 <doc>Logs the given message with the given level.</doc>
@@ -40,9 +40,9 @@
 <arg>\n${length}</arg>
 <arg>console=True</arg>
 </arguments>
-<msg timestamp="20140816 14:25:09.619" level="INFO">
+<msg timestamp="20140816 14:25:56.161" level="INFO">
 6</msg>
-<status status="PASS" endtime="20140816 14:25:09.619" starttime="20140816 14:25:09.619"></status>
+<status status="PASS" endtime="20140816 14:25:56.161" starttime="20140816 14:25:56.160"></status>
 </kw>
 <kw type="kw" name="BuiltIn.Length Should Be">
 <doc>Verifies that the length of the given item is correct.</doc>
@@ -50,8 +50,8 @@
 <arg>${my_words}</arg>
 <arg>6</arg>
 </arguments>
-<msg timestamp="20140816 14:25:09.620" level="INFO">Length is 6</msg>
-<status status="PASS" endtime="20140816 14:25:09.620" starttime="20140816 14:25:09.620"></status>
+<msg timestamp="20140816 14:25:56.163" level="INFO">Length is 6</msg>
+<status status="PASS" endtime="20140816 14:25:56.163" starttime="20140816 14:25:56.162"></status>
 </kw>
 <kw type="for" name="${word} IN [ @{my_words} ]">
 <doc></doc>
@@ -67,16 +67,16 @@
 <arg>'${word}' == 'X'</arg>
 <arg>Exit For Loop</arg>
 </arguments>
-<status status="PASS" endtime="20140816 14:25:09.622" starttime="20140816 14:25:09.621"></status>
+<status status="PASS" endtime="20140816 14:25:56.166" starttime="20140816 14:25:56.164"></status>
 </kw>
 <kw type="kw" name="${length} = BuiltIn.Get Length">
 <doc>Returns and logs the length of the given item.</doc>
 <arguments>
 <arg>${word}</arg>
 </arguments>
-<msg timestamp="20140816 14:25:09.623" level="INFO">Length is 5</msg>
-<msg timestamp="20140816 14:25:09.623" level="INFO">${length} = 5</msg>
-<status status="PASS" endtime="20140816 14:25:09.623" starttime="20140816 14:25:09.623"></status>
+<msg timestamp="20140816 14:25:56.166" level="INFO">Length is 5</msg>
+<msg timestamp="20140816 14:25:56.167" level="INFO">${length} = 5</msg>
+<status status="PASS" endtime="20140816 14:25:56.166" starttime="20140816 14:25:56.166"></status>
 </kw>
 <kw type="kw" name="BuiltIn.Log">
 <doc>Logs the given message with the given level.</doc>
@@ -84,11 +84,11 @@
 <arg>\n${word} have length ${length}</arg>
 <arg>console=True</arg>
 </arguments>
-<msg timestamp="20140816 14:25:09.624" level="INFO">
+<msg timestamp="20140816 14:25:56.167" level="INFO">
 Hello have length 5</msg>
-<status status="PASS" endtime="20140816 14:25:09.624" starttime="20140816 14:25:09.623"></status>
+<status status="PASS" endtime="20140816 14:25:56.168" starttime="20140816 14:25:56.167"></status>
 </kw>
-<status status="PASS" endtime="20140816 14:25:09.624" starttime="20140816 14:25:09.621"></status>
+<status status="PASS" endtime="20140816 14:25:56.168" starttime="20140816 14:25:56.163"></status>
 </kw>
 <kw type="foritem" name="${word} = Robot">
 <doc></doc>
@@ -100,16 +100,16 @@ Hello have length 5</msg>
 <arg>'${word}' == 'X'</arg>
 <arg>Exit For Loop</arg>
 </arguments>
-<status status="PASS" endtime="20140816 14:25:09.625" starttime="20140816 14:25:09.625"></status>
+<status status="PASS" endtime="20140816 14:25:56.169" starttime="20140816 14:25:56.168"></status>
 </kw>
 <kw type="kw" name="${length} = BuiltIn.Get Length">
 <doc>Returns and logs the length of the given item.</doc>
 <arguments>
 <arg>${word}</arg>
 </arguments>
-<msg timestamp="20140816 14:25:09.626" level="INFO">Length is 5</msg>
-<msg timestamp="20140816 14:25:09.626" level="INFO">${length} = 5</msg>
-<status status="PASS" endtime="20140816 14:25:09.626" starttime="20140816 14:25:09.625"></status>
+<msg timestamp="20140816 14:25:56.170" level="INFO">Length is 5</msg>
+<msg timestamp="20140816 14:25:56.170" level="INFO">${length} = 5</msg>
+<status status="PASS" endtime="20140816 14:25:56.170" starttime="20140816 14:25:56.169"></status>
 </kw>
 <kw type="kw" name="BuiltIn.Log">
 <doc>Logs the given message with the given level.</doc>
@@ -117,11 +117,11 @@ Hello have length 5</msg>
 <arg>\n${word} have length ${length}</arg>
 <arg>console=True</arg>
 </arguments>
-<msg timestamp="20140816 14:25:09.626" level="INFO">
+<msg timestamp="20140816 14:25:56.171" level="INFO">
 Robot have length 5</msg>
-<status status="PASS" endtime="20140816 14:25:09.627" starttime="20140816 14:25:09.626"></status>
+<status status="PASS" endtime="20140816 14:25:56.172" starttime="20140816 14:25:56.171"></status>
 </kw>
-<status status="PASS" endtime="20140816 14:25:09.627" starttime="20140816 14:25:09.624"></status>
+<status status="PASS" endtime="20140816 14:25:56.172" starttime="20140816 14:25:56.168"></status>
 </kw>
 <kw type="foritem" name="${word} = SPRINT3R">
 <doc></doc>
@@ -133,16 +133,16 @@ Robot have length 5</msg>
 <arg>'${word}' == 'X'</arg>
 <arg>Exit For Loop</arg>
 </arguments>
-<status status="PASS" endtime="20140816 14:25:09.627" starttime="20140816 14:25:09.627"></status>
+<status status="PASS" endtime="20140816 14:25:56.173" starttime="20140816 14:25:56.172"></status>
 </kw>
 <kw type="kw" name="${length} = BuiltIn.Get Length">
 <doc>Returns and logs the length of the given item.</doc>
 <arguments>
 <arg>${word}</arg>
 </arguments>
-<msg timestamp="20140816 14:25:09.628" level="INFO">Length is 8</msg>
-<msg timestamp="20140816 14:25:09.628" level="INFO">${length} = 8</msg>
-<status status="PASS" endtime="20140816 14:25:09.628" starttime="20140816 14:25:09.628"></status>
+<msg timestamp="20140816 14:25:56.173" level="INFO">Length is 8</msg>
+<msg timestamp="20140816 14:25:56.173" level="INFO">${length} = 8</msg>
+<status status="PASS" endtime="20140816 14:25:56.173" starttime="20140816 14:25:56.173"></status>
 </kw>
 <kw type="kw" name="BuiltIn.Log">
 <doc>Logs the given message with the given level.</doc>
@@ -150,11 +150,11 @@ Robot have length 5</msg>
 <arg>\n${word} have length ${length}</arg>
 <arg>console=True</arg>
 </arguments>
-<msg timestamp="20140816 14:25:09.629" level="INFO">
+<msg timestamp="20140816 14:25:56.174" level="INFO">
 SPRINT3R have length 8</msg>
-<status status="PASS" endtime="20140816 14:25:09.629" starttime="20140816 14:25:09.628"></status>
+<status status="PASS" endtime="20140816 14:25:56.174" starttime="20140816 14:25:56.174"></status>
 </kw>
-<status status="PASS" endtime="20140816 14:25:09.629" starttime="20140816 14:25:09.627"></status>
+<status status="PASS" endtime="20140816 14:25:56.174" starttime="20140816 14:25:56.172"></status>
 </kw>
 <kw type="foritem" name="${word} = X">
 <doc></doc>
@@ -170,24 +170,24 @@ SPRINT3R have length 8</msg>
 <doc>Stops executing the enclosing for loop.</doc>
 <arguments>
 </arguments>
-<msg timestamp="20140816 14:25:09.630" level="INFO">Exiting for loop altogether.</msg>
-<status status="PASS" endtime="20140816 14:25:09.630" starttime="20140816 14:25:09.630"></status>
+<msg timestamp="20140816 14:25:56.175" level="INFO">Exiting for loop altogether.</msg>
+<status status="PASS" endtime="20140816 14:25:56.176" starttime="20140816 14:25:56.175"></status>
 </kw>
-<status status="PASS" endtime="20140816 14:25:09.630" starttime="20140816 14:25:09.629"></status>
+<status status="PASS" endtime="20140816 14:25:56.176" starttime="20140816 14:25:56.175"></status>
 </kw>
-<status status="PASS" endtime="20140816 14:25:09.630" starttime="20140816 14:25:09.629"></status>
+<status status="PASS" endtime="20140816 14:25:56.176" starttime="20140816 14:25:56.175"></status>
 </kw>
-<status status="PASS" endtime="20140816 14:25:09.630" starttime="20140816 14:25:09.620"></status>
+<status status="PASS" endtime="20140816 14:25:56.176" starttime="20140816 14:25:56.163"></status>
 </kw>
 <doc></doc>
 <tags>
 </tags>
-<status status="PASS" endtime="20140816 14:25:09.631" critical="yes" starttime="20140816 14:25:09.614"></status>
+<status status="PASS" endtime="20140816 14:25:56.177" critical="yes" starttime="20140816 14:25:56.156"></status>
 </test>
 <doc></doc>
 <metadata>
 </metadata>
-<status status="PASS" endtime="20140816 14:25:09.633" starttime="20140816 14:25:09.574"></status>
+<status status="PASS" endtime="20140816 14:25:56.179" starttime="20140816 14:25:56.103"></status>
 </suite>
 <statistics>
 <total>
