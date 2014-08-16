@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20140816 14:07:24.455" generator="Robot 2.8.5 (Python 2.7.8 on win32)">
+<robot generated="20140816 14:12:12.392" generator="Robot 2.8.5 (Python 2.7.8 on win32)">
 <suite source="C:\Users\Avatar\Robot\robot-framework\Standard-Libraly.txt" id="s1" name="Standard-Libraly">
 <test id="s1-t1" name="Demo">
 <kw type="kw" name="@{my_words} = BuiltIn.Create List">
@@ -10,10 +10,9 @@
 <arg>SPRINT3R</arg>
 <arg>X</arg>
 <arg>Framework</arg>
-<arg>Tanjai</arg>
 </arguments>
-<msg timestamp="20140816 14:07:24.498" level="INFO">@{my_words} = [ Hello | Robot | SPRINT3R | X | Framework | Tanjai ]</msg>
-<status status="PASS" endtime="20140816 14:07:24.498" starttime="20140816 14:07:24.498"></status>
+<msg timestamp="20140816 14:12:12.436" level="INFO">@{my_words} = [ Hello | Robot | SPRINT3R | X | Framework ]</msg>
+<status status="PASS" endtime="20140816 14:12:12.436" starttime="20140816 14:12:12.436"></status>
 </kw>
 <kw type="kw" name="BuiltIn.Log">
 <doc>Logs the given message with the given level.</doc>
@@ -21,18 +20,18 @@
 <arg>\n${my_words}</arg>
 <arg>console=True</arg>
 </arguments>
-<msg timestamp="20140816 14:07:24.499" level="INFO">
-[u'Hello', u'Robot', u'SPRINT3R', u'X', u'Framework', u'Tanjai']</msg>
-<status status="PASS" endtime="20140816 14:07:24.500" starttime="20140816 14:07:24.499"></status>
+<msg timestamp="20140816 14:12:12.437" level="INFO">
+[u'Hello', u'Robot', u'SPRINT3R', u'X', u'Framework']</msg>
+<status status="PASS" endtime="20140816 14:12:12.437" starttime="20140816 14:12:12.437"></status>
 </kw>
 <kw type="kw" name="${length} = BuiltIn.Get Length">
 <doc>Returns and logs the length of the given item.</doc>
 <arguments>
 <arg>${my_words}</arg>
 </arguments>
-<msg timestamp="20140816 14:07:24.500" level="INFO">Length is 6</msg>
-<msg timestamp="20140816 14:07:24.500" level="INFO">${length} = 6</msg>
-<status status="PASS" endtime="20140816 14:07:24.500" starttime="20140816 14:07:24.500"></status>
+<msg timestamp="20140816 14:12:12.438" level="INFO">Length is 5</msg>
+<msg timestamp="20140816 14:12:12.438" level="INFO">${length} = 5</msg>
+<status status="PASS" endtime="20140816 14:12:12.438" starttime="20140816 14:12:12.438"></status>
 </kw>
 <kw type="kw" name="BuiltIn.Log">
 <doc>Logs the given message with the given level.</doc>
@@ -40,19 +39,28 @@
 <arg>\n${length}</arg>
 <arg>console=True</arg>
 </arguments>
-<msg timestamp="20140816 14:07:24.501" level="INFO">
-6</msg>
-<status status="PASS" endtime="20140816 14:07:24.502" starttime="20140816 14:07:24.501"></status>
+<msg timestamp="20140816 14:12:12.439" level="INFO">
+5</msg>
+<status status="PASS" endtime="20140816 14:12:12.439" starttime="20140816 14:12:12.439"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Length Should Be">
+<doc>Verifies that the length of the given item is correct.</doc>
+<arguments>
+<arg>${my_words}</arg>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20140816 14:12:12.440" level="INFO">Length is 5</msg>
+<status status="PASS" endtime="20140816 14:12:12.440" starttime="20140816 14:12:12.440"></status>
 </kw>
 <doc></doc>
 <tags>
 </tags>
-<status status="PASS" endtime="20140816 14:07:24.502" critical="yes" starttime="20140816 14:07:24.497"></status>
+<status status="PASS" endtime="20140816 14:12:12.441" critical="yes" starttime="20140816 14:12:12.435"></status>
 </test>
 <doc></doc>
 <metadata>
 </metadata>
-<status status="PASS" endtime="20140816 14:07:24.504" starttime="20140816 14:07:24.456"></status>
+<status status="PASS" endtime="20140816 14:12:12.443" starttime="20140816 14:12:12.393"></status>
 </suite>
 <statistics>
 <total>
