@@ -7,4 +7,5 @@ Library    Selenium2Library
 *** Test Cases ***
 Order Battery
     Open Browser    http://www.tarad.com/product/6126300
-    
+    Wait Until Page Contains   ซื้อ 1 แถม 1 แบตสำรอง Eloop E8 ของแท้ 8,000 mAh
+    Page Should Contain    ราคาพิเศษ : 990 บาท
