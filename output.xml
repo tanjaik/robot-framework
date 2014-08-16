@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20140816 15:45:35.358" generator="Robot 2.8.5 (Python 2.7.8 on win32)">
+<robot generated="20140816 16:16:31.256" generator="Robot 2.8.5 (Python 2.7.8 on win32)">
 <suite source="C:\Users\Avatar\Robot\robot-framework\Order_Eloop_Battery.txt" id="s1" name="Order Eloop Battery">
 <test id="s1-t1" name="Order Battery">
 <kw type="kw" name="Selenium2Library.Open Browser">
@@ -7,23 +7,23 @@
 <arguments>
 <arg>http://www.tarad.com/product/6126300</arg>
 </arguments>
-<msg timestamp="20140816 15:45:35.575" level="INFO">Opening browser 'firefox' to base url 'http://www.tarad.com/product/6126300'</msg>
-<status status="PASS" endtime="20140816 15:45:51.725" starttime="20140816 15:45:35.575"></status>
+<msg timestamp="20140816 16:16:31.478" level="INFO">Opening browser 'firefox' to base url 'http://www.tarad.com/product/6126300'</msg>
+<status status="PASS" endtime="20140816 16:16:45.319" starttime="20140816 16:16:31.478"></status>
 </kw>
 <kw type="kw" name="Selenium2Library.Wait Until Page Contains">
 <doc>Waits until `text` appears on current page.</doc>
 <arguments>
 <arg>ซื้อ 1 แถม 1 แบตสำรอง Eloop E8 ของแท้ 8,000 mAh</arg>
 </arguments>
-<status status="PASS" endtime="20140816 15:45:51.801" starttime="20140816 15:45:51.726"></status>
+<status status="PASS" endtime="20140816 16:16:45.389" starttime="20140816 16:16:45.320"></status>
 </kw>
 <kw type="kw" name="Selenium2Library.Page Should Contain">
 <doc>Verifies that current page contains `text`.</doc>
 <arguments>
 <arg>ราคาพิเศษ : 990 บาท</arg>
 </arguments>
-<msg timestamp="20140816 15:45:51.836" level="INFO">Current page contains text 'ราคาพิเศษ : 990 บาท'.</msg>
-<status status="PASS" endtime="20140816 15:45:51.836" starttime="20140816 15:45:51.802"></status>
+<msg timestamp="20140816 16:16:45.429" level="INFO">Current page contains text 'ราคาพิเศษ : 990 บาท'.</msg>
+<status status="PASS" endtime="20140816 16:16:45.429" starttime="20140816 16:16:45.390"></status>
 </kw>
 <kw type="kw" name="Selenium2Library.Select Radio Button">
 <doc>Sets selection of radio button group identified by `group_name` to `value`.</doc>
@@ -31,8 +31,8 @@
 <arg>option_id</arg>
 <arg>169991</arg>
 </arguments>
-<msg timestamp="20140816 15:45:51.837" level="INFO">Selecting '169991' from radio button 'option_id'.</msg>
-<status status="PASS" endtime="20140816 15:45:52.009" starttime="20140816 15:45:51.837"></status>
+<msg timestamp="20140816 16:16:45.430" level="INFO">Selecting '169991' from radio button 'option_id'.</msg>
+<status status="PASS" endtime="20140816 16:16:45.602" starttime="20140816 16:16:45.430"></status>
 </kw>
 <kw type="kw" name="Selenium2Library.Select From List">
 <doc>Selects `*items` from list identified by `locator`</doc>
@@ -40,33 +40,41 @@
 <arg>product_qty</arg>
 <arg>5</arg>
 </arguments>
-<msg timestamp="20140816 15:45:52.010" level="INFO">Selecting option(s) '5' from list 'product_qty'.</msg>
-<status status="PASS" endtime="20140816 15:45:52.234" starttime="20140816 15:45:52.010"></status>
+<msg timestamp="20140816 16:16:45.603" level="INFO">Selecting option(s) '5' from list 'product_qty'.</msg>
+<status status="PASS" endtime="20140816 16:16:45.808" starttime="20140816 16:16:45.603"></status>
 </kw>
 <kw type="kw" name="Selenium2Library.Click Button">
 <doc>Clicks a button identified by `locator`.</doc>
 <arguments>
 <arg>f_buy</arg>
 </arguments>
-<msg timestamp="20140816 15:45:52.235" level="INFO">Clicking button 'f_buy'.</msg>
-<status status="PASS" endtime="20140816 15:46:11.992" starttime="20140816 15:45:52.235"></status>
+<msg timestamp="20140816 16:16:45.809" level="INFO">Clicking button 'f_buy'.</msg>
+<status status="PASS" endtime="20140816 16:16:56.861" starttime="20140816 16:16:45.809"></status>
 </kw>
 <kw type="kw" name="Selenium2Library.Wait Until Page Contains">
 <doc>Waits until `text` appears on current page.</doc>
 <arguments>
 <arg>จำนวนรวม:5 ชิ้น</arg>
 </arguments>
-<status status="PASS" endtime="20140816 15:46:25.342" starttime="20140816 15:46:11.993"></status>
+<status status="PASS" endtime="20140816 16:17:29.313" starttime="20140816 16:16:56.862"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Page Should Contain Element">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>xpath=//div[@id='flyout_cart']/div[@class="getitem5"]</arg>
+</arguments>
+<msg timestamp="20140816 16:17:29.328" level="INFO">Current page contains element 'xpath=//div[@id='flyout_cart']/div[@class="getitem5"]'.</msg>
+<status status="PASS" endtime="20140816 16:17:29.328" starttime="20140816 16:17:29.314"></status>
 </kw>
 <doc></doc>
 <tags>
 </tags>
-<status status="PASS" endtime="20140816 15:46:25.344" critical="yes" starttime="20140816 15:45:35.574"></status>
+<status status="PASS" endtime="20140816 16:17:29.329" critical="yes" starttime="20140816 16:16:31.477"></status>
 </test>
 <doc>สั่งสินค้า แบตสำรอง Eloop E8 ของแท้ 8,000 mAh</doc>
 <metadata>
 </metadata>
-<status status="PASS" endtime="20140816 15:46:25.347" starttime="20140816 15:45:35.359"></status>
+<status status="PASS" endtime="20140816 16:17:29.333" starttime="20140816 16:16:31.256"></status>
 </suite>
 <statistics>
 <total>

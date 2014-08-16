@@ -13,3 +13,4 @@ Order Battery
     Select From List    product_qty    5
     Click Button    f_buy
     Wait Until Page Contains    จำนวนรวม:5 ชิ้น
+    Page Should Contain Element    xpath=//div[@id='flyout_cart']/div[@class="getitem5"]
