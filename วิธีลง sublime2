@@ -1,0 +1,16 @@
+วิธีลง sublime2
+1. ไปที่ เวบ sublime
+2. เลือก Download Sublime Text 2
+3. หลังจากลง sublime text 2 เรียบร้อย
+	ไปที่ google ค้นหา sublime package control install
+4. เลือก https://sublime.wbond.net/installation
+5. เลือก TAB Sublime Text 2
+6. Copy ของที่อยู่ใน text box 
+7. กลับมาที่ Sublime เลือก View > Show Console
+8. Paste สิ่งที่ Copy มาจาก ข้อ 6
+9. ปิด sublime แล้ว เปิด Sublime อีกครั้ง
+10. ไปที่ Tools > Command Palette
+11. พิมพ์ Package Control Install Package
+12. เลือก Package Control Install Package
+13. พิมพ์ Robot Framework จะพบ สองตัว ให้ติดตั้งทั้งสองตัว
+14. ไปที่ View > Syntax > Robot.txt

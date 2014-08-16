@@ -1,4 +1,5 @@
 *** Setting ***
+Documentation	Use Standard Library
 
 *** Test Cases ***
 Demo
