@@ -1,0 +1,21 @@
+*** Settings ***
+Documentation    Log in and Update Status by Robot Framework
+Library    		 Selenium2Library
+
+*** Variables ***
+${Facebook URL}    https://www.facebook.com/
+
+*** Test Case ***
+Log In Facebook
+    Open Browser    https://www.facebook.com/
+    Title Should Be    ยินดีต้อนรับสู่ Facebook - เข้าสู่ระบบ ลงทะเบียน หรือเรียนรู้เพิ่มเติม
+    Page Should Contain Element    id=email
+    Input Text    id=email    tan_kazeni@hotmail.com
+    Input Password    id=pass    
+    Click Element    id=u_0_l
+    Wait Until Page Contains Element    css=span.uiIconText._51z7
+    Element Should Contain    css=span.uiIconText._51z7    Update Status
+    Wait Until Page Contains Element    id=u_0_1v
+    Element Should Contain    id=u_0_1v    What's on your mind?
+    Input Text    id=u_0_1v    Hello from Robot Framework. This is Tan's fist robot framework script.
+    Click Element    xpath=(//button[@value='1'])[2] 
