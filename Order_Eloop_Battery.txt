@@ -11,3 +11,6 @@ Order Battery
     Page Should Contain    ราคาพิเศษ : 990 บาท
     Select Radio Button    option_id    169991
     Select From List    product_qty    5
+    Click Button    f_buy
+    Wait Until Page Contains    จำนวน รวม 5 ชิ้น
+    
